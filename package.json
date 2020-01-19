@@ -2,8 +2,10 @@
   "name": "react-read",
   "private": true,
   "scripts": {
-    "start": "bash ./scripts/start-dev.sh",
-    "watch": "npx lerna run watch --stream --scope read-react"
+    "link:react": "bash ./scripts/start-dev.sh",
+    "watch": "npx lerna run watch --stream --scope read-react",
+    "watch:example": "npx lerna run watch --stream --scope example",
+    "dev": "node ./scripts/watch.js"
   },
   "devDependencies": {
     "lerna": "^3.20.2"
